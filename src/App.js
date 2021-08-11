@@ -13,7 +13,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Profile
         url={user.avatar}
         name={user.name}

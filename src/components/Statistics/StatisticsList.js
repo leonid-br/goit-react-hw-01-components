@@ -1,9 +1,11 @@
 import Statistics from './Statistics';
 import PropTypes from 'prop-types';
+import style from './StatisticsList.module.css';
+
 
 const StatisticList = ({ stats }) => {
   return (
-    <ul className="stat-list">
+    <ul className={style.statList}>
       {stats.map(stat => (
         <Statistics
           key={stat.id}

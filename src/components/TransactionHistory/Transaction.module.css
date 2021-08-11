@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.title:not(:last-child) {
+  border-right: solid 1px #d3d3d3;
+}

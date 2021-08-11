@@ -1,0 +1,24 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.status {
+  display: block;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  border-radius: 100%;
+}
+
+.name {
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 26px;
+}
