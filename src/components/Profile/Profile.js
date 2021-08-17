@@ -2,15 +2,7 @@ import PropTypes from 'prop-types';
 import style from './Profile.module.css';
 import defaultImg from './defaultImg.jpg';
 
-const Profile = ({
-  url = defaultImg,
-  name,
-  tag,
-  location,
-  followers,
-  views,
-  likes,
-}) => {
+const Profile = ({ url = defaultImg, name, tag, location, stats }) => {
   return (
     <div className={style.profile}>
       <div className={style.description}>
@@ -28,15 +20,15 @@ const Profile = ({
       <ul className={style.stats}>
         <li className={style.item}>
           <span className={style.label}>Followers</span>
-          <span className={style.quantity}>{followers}</span>
+          <span className={style.quantity}>{stats.followers}</span>
         </li>
         <li className={style.item}>
           <span className={style.label}>Views</span>
-          <span className={style.quantity}>{views}</span>
+          <span className={style.quantity}>{stats.views}</span>
         </li>
         <li className={style.item}>
           <span className={style.label}>Likes</span>
-          <span className={style.quantity}>{likes}</span>
+          <span className={style.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>

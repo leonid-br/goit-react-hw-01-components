@@ -1,27 +1,26 @@
 import Profile from './components/Profile/Profile';
-import user from './components/Profile/user.json';
+import user from './data/user.json';
 
-import StatisticList from './components/Statistics/StatisticsList';
-import StatisticsSection from './components/Statistics/StatisticsSection';
-import statisticalData from './components/Statistics/statistical-data.json';
+import StatisticList from './components/Statistics/StatisticsList/StatisticsList';
+import StatisticsSection from './components/Statistics/StatisticsSection/StatisticsSection';
+import statisticalData from './data/statistical-data.json';
 
-import FriendList from './components/FriendList/FriendList';
-import friends from './components/FriendList/friends.json';
+import FriendList from './components/FriendList/FriendList/FriendList';
+import friends from './data/friends.json';
 
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import transactions from './components/TransactionHistory/transactions.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory/TransactionHistory';
+import transactions from './data/transactions.json';
 
 export default function App() {
+  const { avatar, name, tag, location, stats } = user;
   return (
     <div className="container">
       <Profile
-        url={user.avatar}
-        name={user.name}
-        tag={user.tag}
-        location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        url={avatar}
+        name={name}
+        tag={tag}
+        location={location}
+        stats={stats}
       />
 
       <StatisticsSection title="Upload stats">
